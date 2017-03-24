@@ -2994,7 +2994,7 @@ var AnyTime =
           if ( oOff.top < wOff.top )
             oOff.top = wOff.top;
 
-          this.oDiv.css( { top: oOff.top+'px', left: oOff.left+'px' } ) ;
+          this.oDiv.css( { top: '0px', left: '0px' } ) ;
         }
 
         else if ( this.yDiv && this.yDiv.is(":visible") )
@@ -3007,13 +3007,13 @@ var AnyTime =
             wOff = { top: 0, left: 0 };
           }
           yOff.left += ( (this.yLab.outerWidth(true)-this.yDiv.outerWidth(true)) / 2 );
-          this.yDiv.css( { top: yOff.top+'px', left: yOff.left+'px' } ) ;
+          this.yDiv.css( { top: '0px', left:'0px' } ) ;
         }
 
         if ( this.cloak )
           this.cloak.css( {
-            top: wOff.top+'px',
-            left: wOff.left+'px',
+            top: '0px',
+            left: '0px',
             height: String(this.div.outerHeight(true)-2)+'px',
             width: String(this.div.outerWidth(true)-2)+'px'
           } );
